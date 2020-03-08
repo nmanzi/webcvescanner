@@ -1,5 +1,5 @@
 # shitsniffer
-Gather a list of Citrix appliances in a country / state pair, and check if they're vulnerable to CVE-2019-19781
+Gather a list of Citrix appliances in a country / state pair, and check if they're vulnerable to CVE-2019-19781. Results are output as JSON which can be wrangled quite nicely into a meaningful PowerBI report.
 
 It does this by querying Shodan for all results in a particular country matching a search string. By default, it searches `country:AU has_ssl:true` with the search string `"Set-Cookie: pwcount=0"`
 
@@ -37,3 +37,6 @@ OPTIONS:
 
 Example: python shitsniffer.py -a <API key> -d shodan-DDMMYY.json -f output-DDMMYY.json
 ```
+
+## Thanks
+Thanks goes to Diverse Services for allowing me time to indulge myself with this endeavour.
